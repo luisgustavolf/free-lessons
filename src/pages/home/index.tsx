@@ -18,7 +18,7 @@ export function HomePage(props: HomePageProps) {
           <Link to={'/02-reactive-pattern'}>02 - Padrão Reativo</Link>
         </li>
         <li>
-          <Link to={'/03-crazy-react'}>03 - React doidão</Link>
+          <Link to={'/03-react-without-react'}>03 - React doidão</Link>
         </li>
       </ul>
     </div>
