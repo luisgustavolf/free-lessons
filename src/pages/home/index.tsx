@@ -20,6 +20,9 @@ export function HomePage(props: HomePageProps) {
         <li>
           <Link to={'/03-react-without-react'}>03 - React doidão</Link>
         </li>
+        <li>
+          <Link to={'/04-react-way'}>04 - O jeitão react</Link>
+        </li>
       </ul>
     </div>
   )

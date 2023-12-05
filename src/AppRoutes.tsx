@@ -4,6 +4,7 @@ import { HomePage } from './pages/home'
 import { L01JSXPage } from './pages/01-jsx'
 import { L2ReactivePatterPage } from './pages/02-reactive-pattern'
 import { L3ReactWithoutReactPage } from './pages/03-crazy-react'
+import { L04ReactWayPage } from './pages/04-react-way'
 
 export interface AppRoutesProps {
   children?: any
@@ -17,6 +18,7 @@ export function AppRoutes(props:AppRoutesProps) {
         <Route path='/01-jsx' element={<L01JSXPage />}/>
         <Route path='/02-reactive-pattern' element={<L2ReactivePatterPage />}/>
         <Route path='/03-react-without-react' element={<L3ReactWithoutReactPage />}/>
+        <Route path='/04-react-way' element={<L04ReactWayPage />}/>
         <Route path='*' element={<Navigate to={'/'} />} />
       </Routes>
     </BrowserRouter>
