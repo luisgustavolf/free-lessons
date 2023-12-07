@@ -23,7 +23,7 @@ export function L04ReactWayPage() {
       setLastValAt(new Date())
   }, [counter])
 
-  console.log(`render ${Math.random()}`)
+  console.log(`render`)
 
   return (
     <div className={'L04ReactWayPage'}>
