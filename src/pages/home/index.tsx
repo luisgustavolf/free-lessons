@@ -23,6 +23,9 @@ export function HomePage(props: HomePageProps) {
         <li>
           <Link to={'/04-react-way'}>04 - O jeitão react</Link>
         </li>
+        <li>
+          <Link to={'/05-render'}>05 - Render e Re-render</Link>
+        </li>
       </ul>
     </div>
   )
