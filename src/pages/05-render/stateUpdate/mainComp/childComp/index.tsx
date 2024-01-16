@@ -1,4 +1,6 @@
 import * as React from 'react'
+import { log } from '../../../../../lib/log'
+import { BoxedWrap } from '../../../../../components/boxedWrap'
 
 export function ChildComp() {
   const [val, setVal] = React.useState(0)
@@ -7,10 +9,10 @@ export function ChildComp() {
     setVal((prev) => prev + 1)
   }
 
-  console.log('Render componente filho', Math.random())
+  log('Render componente filho', 'color: yellow')
 
   return (
-    <div className={'child-comp'}>
+    <BoxedWrap>
       <div>
         Valor: {val}
       </div>
@@ -18,6 +20,6 @@ export function ChildComp() {
       <button onClick={handleUpdateVal} >
         Atualizar componente filho
       </button>
-    </div>
+    </BoxedWrap>
   )
 }

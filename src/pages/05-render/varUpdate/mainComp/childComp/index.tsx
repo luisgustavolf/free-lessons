@@ -1,4 +1,6 @@
 import * as React from 'react'
+import { BoxedWrap } from '../../../../../components/boxedWrap'
+import { log } from '../../../../../lib/log'
 
 export interface ChildCompProps {
   someValue: number
@@ -6,12 +8,12 @@ export interface ChildCompProps {
 
 export function ChildComp(props:ChildCompProps) {
 
-  console.log('Componente filho', Math.random())
+  log('Componente filho', 'color:yellow')
   
   return (
-    <div className={'ChildComp'}>
+    <BoxedWrap>
       Valor no componente filho:
       {props.someValue}
-    </div>
+    </BoxedWrap>
   )
 }
