@@ -9,7 +9,7 @@ export const MemoChildComp = React.memo(() => {
     setVal((prev) => prev + 1)
   }
 
-  log('Render componente filho memoizado', 'color: magenta')
+  log('Componente filho memoizado atualizado', 'color: magenta')
 
   return (
     <BoxedWrap>

@@ -11,7 +11,7 @@ export function MainComp() {
     setVal((prev) => prev + 1)
   }
 
-  log('Render componente pai')
+  log('Componente pai atualizado')
 
   return (
     <BoxedWrap>

@@ -9,7 +9,7 @@ export function ChildComp() {
     setVal((prev) => prev + 1)
   }
 
-  log('Render componente filho', 'color: yellow')
+  log('Componente filho atualizado', 'color: yellow')
 
   return (
     <BoxedWrap>

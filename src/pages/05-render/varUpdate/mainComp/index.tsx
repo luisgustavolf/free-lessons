@@ -27,7 +27,7 @@ export function MainComp() {
   // ------------------------------------------------
   // Render
 
-  log('Componente pai')
+  log('Componente pai atualizado')
 
   return (
     <BoxedWrap>

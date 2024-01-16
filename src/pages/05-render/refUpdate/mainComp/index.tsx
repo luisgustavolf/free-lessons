@@ -22,7 +22,7 @@ export function MainComp() {
     log(`Novo valor ${refValue.current}`)
   }
 
-  log('Render com Ref')
+  log('Componente pai atualizado')
 
   return (
     <BoxedWrap>

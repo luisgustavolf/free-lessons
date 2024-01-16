@@ -8,7 +8,7 @@ export interface ChildCompProps {
 
 export function ChildComp(props:ChildCompProps) {
 
-  log('Componente filho', 'color:yellow')
+  log('Componente filho atualizado', 'color:yellow')
   
   return (
     <BoxedWrap>
