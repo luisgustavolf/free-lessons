@@ -26,6 +26,9 @@ export function HomePage(props: HomePageProps) {
         <li>
           <Link to={'/05-render'}>05 - Render e Re-render</Link>
         </li>
+        <li>
+          <Link to={'/06-state-location'}>06 - Localização do estado</Link>
+        </li>
       </ul>
     </div>
   )

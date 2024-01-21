@@ -9,6 +9,10 @@ import { L05RenderPage } from './pages/05-render'
 import { StateUpdatePage } from './pages/05-render/stateUpdate'
 import { RefUpdatePage } from './pages/05-render/refUpdate'
 import { VarUpdatePage } from './pages/05-render/varUpdate'
+import { L06StateLocationPage } from './pages/06-state-location'
+import { LayoutCompPage } from './pages/06-state-location/layoutComp'
+import { BehavoralCompPage } from './pages/06-state-location/behavoralComp'
+import { GlobalBindedCompPage } from './pages/06-state-location/globalBindedComp'
 
 export interface AppRoutesProps {
   children?: any
@@ -28,6 +32,12 @@ export function AppRoutes(props:AppRoutesProps) {
           <Route path='state-update' element={<StateUpdatePage />}/>
           <Route path='ref-update' element={<RefUpdatePage />} />
           <Route path='var-update' element={<VarUpdatePage />} />
+        </Route>
+        <Route path='/06-state-location'>
+          <Route index element={<L06StateLocationPage />} />
+          <Route path='layout-comp' element={<LayoutCompPage />}/>
+          <Route path='behavoral-comp' element={<BehavoralCompPage />} />
+          <Route path='global-binded-comp' element={<GlobalBindedCompPage />} />
         </Route>
         <Route path='*' element={<Navigate to={'/'} />} />
       </Routes>
