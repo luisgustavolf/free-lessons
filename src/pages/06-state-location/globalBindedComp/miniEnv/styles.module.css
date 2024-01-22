@@ -1,0 +1,18 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10;
+  border: 1px solid #ccc;
+  height: 400px;
+}
+
+.header {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  text-align: right;
+}
+
+.body {
+  flex: 1;
+  padding: 10px;
+}
