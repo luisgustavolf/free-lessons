@@ -12,7 +12,7 @@ export function UserUpdater() {
 
   return (
     <button onClick={handleClick}>
-      Atualiar usuário
+      Atualizar usuário
     </button>
   )
 }
