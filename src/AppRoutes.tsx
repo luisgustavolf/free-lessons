@@ -14,6 +14,11 @@ import { LayoutCompPage } from './pages/06-state-location/layoutComp'
 import { BehavoralCompPage } from './pages/06-state-location/behavoralComp'
 import { GlobalBindedCompPage } from './pages/06-state-location/globalBindedComp'
 import { L07UseStagePage } from './pages/07-useState'
+import { ChatPage } from './pages/chat'
+import { ChatHomePage } from './pages/chatHome'
+import { ChatConfigPage } from './pages/chatConfig'
+import { ChatConfig2Page } from './pages/chatConfig2'
+import { ChatContact } from './pages/chatContact'
 
 export interface AppRoutesProps {
   children?: any
@@ -42,6 +47,17 @@ export function AppRoutes(props:AppRoutesProps) {
         </Route>
         <Route path='/07-use-state' element={<L07UseStagePage/>} />
         <Route path='*' element={<Navigate to={'/'} />} />
+        
+        
+        <Route path='/chat/config2' element={<ChatConfig2Page />} />
+
+        <Route path='/chat' element={<ChatPage />}>
+          <Route index element={<ChatHomePage />} />
+          <Route path='config' element={<ChatConfigPage />} />
+          <Route path='contact/:id' element={<ChatContact />} />
+          <Route path='*' element={<Navigate to={'/chat'} />} />
+        </Route>
+
       </Routes>
     </BrowserRouter>
   )

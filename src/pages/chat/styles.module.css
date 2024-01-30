@@ -1,0 +1,10 @@
+.canvas {
+  display: flex;
+  gap: 10px;
+  border: 1px solid #ccc;
+}
+
+.canvas > div {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
