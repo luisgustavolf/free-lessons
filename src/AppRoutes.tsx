@@ -13,6 +13,7 @@ import { L06StateLocationPage } from './pages/06-state-location'
 import { LayoutCompPage } from './pages/06-state-location/layoutComp'
 import { BehavoralCompPage } from './pages/06-state-location/behavoralComp'
 import { GlobalBindedCompPage } from './pages/06-state-location/globalBindedComp'
+import { L07UseStagePage } from './pages/07-useState'
 
 export interface AppRoutesProps {
   children?: any
@@ -39,6 +40,7 @@ export function AppRoutes(props:AppRoutesProps) {
           <Route path='behavoral-comp' element={<BehavoralCompPage />} />
           <Route path='global-binded-comp' element={<GlobalBindedCompPage />} />
         </Route>
+        <Route path='/07-use-state' element={<L07UseStagePage/>} />
         <Route path='*' element={<Navigate to={'/'} />} />
       </Routes>
     </BrowserRouter>
