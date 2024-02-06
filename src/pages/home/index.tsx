@@ -32,6 +32,9 @@ export function HomePage(props: HomePageProps) {
         <li>
           <Link to={'/07-use-state'}>07 - useState</Link>
         </li>
+        <li>
+          <Link to={'/08-use-effect'}>08 - useEffect</Link>
+        </li>
       </ul>
     </div>
   )
