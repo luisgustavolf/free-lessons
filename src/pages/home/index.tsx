@@ -35,6 +35,9 @@ export function HomePage(props: HomePageProps) {
         <li>
           <Link to={'/08-use-effect'}>08 - useEffect</Link>
         </li>
+        <li>
+          <Link to={'/09-use-memo'}>09 - useMemo</Link>
+        </li>
       </ul>
     </div>
   )
