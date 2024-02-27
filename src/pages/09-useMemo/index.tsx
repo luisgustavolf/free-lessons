@@ -1,7 +1,3 @@
-import * as React from 'react'
-import { Regular } from './regular'
-import { WithinHook } from './withinHook'
-import { Debouced } from './debounced'
 import { NotADifference } from './notADifference'
 
 export function L09UseMemoPage() {
