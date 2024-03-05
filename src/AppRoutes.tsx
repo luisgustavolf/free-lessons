@@ -16,6 +16,7 @@ import { GlobalBindedCompPage } from './pages/06-state-location/globalBindedComp
 import { L07UseStagePage } from './pages/07-useState'
 import { L08UseEffectPage } from './pages/08-useEffect'
 import { L09UseMemoPage } from './pages/09-useMemo'
+import { L10UseCallbackPage } from './pages/10-useCallback'
 
 export interface AppRoutesProps {
   children?: any
@@ -45,6 +46,7 @@ export function AppRoutes(props:AppRoutesProps) {
         <Route path='/07-use-state' element={<L07UseStagePage/>} />
         <Route path='/08-use-effect' element={<L08UseEffectPage />} />
         <Route path='/09-use-memo' element={<L09UseMemoPage />} />
+        <Route path='/10-use-callback' element={<L10UseCallbackPage />} />
         <Route path='*' element={<Navigate to={'/'} />} />
       </Routes>
     </BrowserRouter>

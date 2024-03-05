@@ -38,6 +38,9 @@ export function HomePage(props: HomePageProps) {
         <li>
           <Link to={'/09-use-memo'}>09 - useMemo</Link>
         </li>
+        <li>
+          <Link to={'/10-use-callback'}>10 - useCallback</Link>
+        </li>
       </ul>
     </div>
   )
